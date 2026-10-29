@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dependency-pinner"
+version = "0.1.0"
+description = "Convert loose requirements into pinned versions from the current environment and report drift."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+dependency-pinner = "dependency_pinner.cli:main"
+
+[tool.setuptools]
+packages = ["dependency_pinner"]
